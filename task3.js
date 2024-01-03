@@ -3,3 +3,14 @@
 // Список з елементами знаходиться у файлі index.html
 // Для запуску використовувати Live Server
 // Для перевірки виконання виконати команду node tests/task3.test.js
+
+
+const dropdown = document.getElementById("dropdown");
+const deleteButton = document.getElementById("deleteButton");
+deleteButton.addEventListener("click", () => {
+    const selectedOptionIndex = dropdown.selectedIndex;
+
+    if(selectedOptionIndex !== -1) {
+        dropdown.remove(selectedOptionIndex);
+    }
+});
