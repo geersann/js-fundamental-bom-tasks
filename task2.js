@@ -11,9 +11,9 @@ isStylesEnable = false;
 const firstButton = document.getElementById("button1");
 firstButton.addEventListener("click", () => {
     if(isStylesEnable) {
-        firstButton.style.backgroundColor = "";
+        document.body.style.backgroundColor = "";
     }else {
-        firstButton.style.backgroundColor = "blue";
+        document.body.style.backgroundColor = "blue";
     }
     isStylesEnable = !isStylesEnable;
 });
@@ -22,17 +22,17 @@ isStylesEnable2 = false;
 const secondButton = document.getElementById("button2");
 secondButton.addEventListener("dblclick", () => {
     if(isStylesEnable2) {
-        secondButton.style.backgroundColor = "";
+        document.body.style.backgroundColor = "";
     }else {
-        secondButton.style.backgroundColor = "pink";
+        document.body.style.backgroundColor = "pink";
     }
     isStylesEnable2 = !isStylesEnable2;
 });
 
 const thirdButton = document.getElementById("button3");
 thirdButton.addEventListener("mouseover", () => {
-    thirdButton.style.backgroundColor = "brown";
+    document.body.style.backgroundColor = "brown";
 });
 thirdButton.addEventListener("mouseout", () => {
-    thirdButton.style.backgroundColor = "";
+    document.body.style.backgroundColor = "";
 });    
